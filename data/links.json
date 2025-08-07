@@ -1,0 +1,29 @@
+{
+    "musicLinks": [
+        {
+            "name": "Spotify",
+            "url": "https://open.spotify.com/artist/32ayXtD1UKJ6Ue6lyvs7tV",
+            "img": ""
+        },
+        {
+            "name": "Apple Music",
+            "url": "https://music.apple.com/jp/artist/yuguen/1515931170",
+            "img": ""
+        },
+        {
+            "name": "LINE MUSIC",
+            "url": "https://lin.ee/llADCkN",
+            "img": ""
+        },
+        {
+            "name": "Amazon Music",
+            "url": "https://music.amazon.co.jp/artists/B0CH8ZK9VN/yuguen",
+            "img": ""
+        },
+        {
+            "name": "AWA",
+            "url": "https://mf.awa.fm/4670s8n",
+            "img": ""
+        }   
+    ]
+}
