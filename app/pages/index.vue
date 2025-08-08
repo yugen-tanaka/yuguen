@@ -6,6 +6,10 @@
   <h1 class="text-4xl font-bold text-white">
     Yuguen
   </h1>
+<div class="flex items-center text-white">
+  <Icon name="heroicons:map-pin-16-solid" class="mr-1" />
+  Tokyo, Japan
+</div>
 </div>
     <div class="bg-white bg-opacity-80 p-4 rounded-xl shadow-none border-none w-full max-w-md mb-6">
       <div class="text-center font-bold text-sm uppercase text-black">

@@ -1,2 +1,14 @@
-User-Agent: *
-Disallow:
+User-agent: *
+Disallow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Gemini-Bot
+Allow: /
