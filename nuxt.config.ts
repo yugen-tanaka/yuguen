@@ -6,5 +6,18 @@ export default defineNuxtConfig({
   tailwindcss: {
     exposeConfig: true,
     viewer: true,
+  },
+  app: {
+    head: {
+      htmlAttrs: {
+        lang: 'ja',
+      },
+      title: 'Yuguen',
+      meta: [{ name: 'description', content: 'Yuguen(ゆうげん)の音楽活動に関するリンクまとめサイトです。'}],
+      link: [
+        { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
+        { rel: 'apple-touch-icon', type: 'image/png', sizes: '180x180', href: '/favicon.png' } 
+      ]
+    }
   }
 })
