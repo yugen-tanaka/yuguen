@@ -1,0 +1,23 @@
+
+{
+  "platforms": [
+    {
+      "id": "spotify",
+      "name_ja": "Spotify",
+      "name_en": "Spotify",
+      "logo": "spotify.svg"
+    },
+    {
+      "id": "apple-music",
+      "name_ja": "Apple Music",
+      "name_en": "Apple Music",
+      "logo": "applemusic.svg"
+    },
+    {
+      "id": "youtube-music",
+      "name_ja": "YouTube Music",
+      "name_en": "YouTube Music",
+      "logo": "youtubemusic.svg"
+    }
+  ]
+}
