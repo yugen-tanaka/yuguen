@@ -8,7 +8,17 @@
         "type": "album",
         "category": "piano",
         "description": "",
-        "description_en": ""
+        "description_en": "",
+        "platformUrls": [
+            {
+                "id": "spotify",
+                "url": ""
+            },
+            {
+                "id": "apple-music",
+                "url": "https://music.apple.com/jp/album/flow/1623352057"
+            }
+        ]
     },
     {
         "id": "hisame",
