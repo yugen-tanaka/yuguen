@@ -18,6 +18,24 @@
       "name_ja": "YouTube Music",
       "name_en": "YouTube Music",
       "img": "youtubemusic.svg"
+    },
+    {
+      "id": "amazon-music",
+      "name_ja": "Amazon Music",
+      "name_en": "Amazon Music",
+      "img": "amazonmusic.svg"
+    },
+    {
+      "id": "line-music",
+      "name_ja": "LINE MUSIC",
+      "name_en": "LINE MUSIC",
+      "img": "linemusic.webp"
+    },
+    {
+      "id": "awa",
+      "name_ja": "AWA",
+      "name_en": "AWA",
+      "img": "awa.webp"
     }
   ]
 }

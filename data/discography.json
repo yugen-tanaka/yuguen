@@ -12,11 +12,27 @@
         "platformUrls": [
             {
                 "id": "spotify",
-                "url": ""
+                "url": "https://open.spotify.com/album/0pYJuMhp1TXLnrwNRbPtxe"
             },
             {
                 "id": "apple-music",
                 "url": "https://music.apple.com/jp/album/flow/1623352057"
+            },
+            {
+                "id": "youtube-music",
+                "url": "https://music.youtube.com/playlist?list=OLAK5uy_nkhV_3wfOoDOhYoU0x0wQtGJ5Wj_dpPrw"
+            },
+            {
+                "id": "amazon-music",
+                "url": "https://music.amazon.co.jp/albums/B09ZV24PFR7"
+            },
+            {
+                "id": "line-music",
+                "url": "https://music.line.me/webapp/album/mb00000000027297de"
+            },
+            {
+                "id": "awa",
+                "url": "https://mf.awa.fm/459Irp1"
             }
         ]
     },

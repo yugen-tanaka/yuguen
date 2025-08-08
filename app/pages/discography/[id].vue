@@ -14,8 +14,8 @@
 
         <!-- タイトルとアーティスト -->
         <h1 class="text-4xl font-bold">{{ release.title }}</h1>
-        <p class="text-xl mb-8">Yuguen</p>
-
+        <p class="text-xl mb-1">Yuguen</p>
+        <p class="text-sm mb-8">{{release.release_date}}</p>
         <!-- 配信リンク一覧 -->
         <div v-if="release.platformUrls && release.platformUrls.length > 0" class="space-y-4">
           <a v-for="platformLink in release.platformUrls" :key="platformLink.id" :href="platformLink.url" target="_blank"
