@@ -29,7 +29,7 @@
       <ul class="space-y-4">
         <li v-for="musicLink in musicLinks" :key="musicLink.name">
           <a :href="musicLink.url" target="_blank"
-            class="flex items-center p-4 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105 bg-white bg-opacity-80">
+            class="flex items-center p-2 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105 bg-white bg-opacity-80">
             <div class="flex items-center justify-center w-14 min-w-[56px]">
               <img v-if="musicLink.img" :src="`/images/${musicLink.img}`" alt="" class="w-[45px] h-[45px] rounded-lg" />
               <div v-else class="w-[45px] h-[45px]"></div>
@@ -53,7 +53,7 @@
       <ul class="space-y-4">
         <li v-for="social in socials" :key="social.name">
           <a :href="social.url" target="_blank"
-            class="flex items-center p-4 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105  bg-white bg-opacity-80">
+            class="flex items-center p-2 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105  bg-white bg-opacity-80">
             <div class="flex items-center justify-center w-14 min-w-[56px]">
               <img v-if="social.img" :src="`/images/${social.img}`" alt="" class="w-[45px] h-[45px] rounded-lg" />
               <div v-else class="w-[45px] h-[45px]"></div>
@@ -75,7 +75,7 @@
       <ul class="space-y-4">
         <li v-for="item in other" :key="item.name">
           <a :href="item.url" target="_blank"
-            class="flex items-center p-4 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105  bg-white bg-opacity-80">
+            class="flex items-center p-2 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105  bg-white bg-opacity-80">
             <div class="flex items-center justify-center w-14 min-w-[56px]">
               <img v-if="item.img" :src="`/images/${item.img}`" alt="" class="w-[45px] h-[45px] rounded-lg" />
               <div v-else class="w-[45px] h-[45px]"></div>
