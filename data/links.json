@@ -1,94 +1,103 @@
-{
-    "musicLinks": [
-        {
-            "name": "Spotify",
-            "url": "https://open.spotify.com/artist/32ayXtD1UKJ6Ue6lyvs7tV",
-            "img": "spotify.svg"
-        },
-        {
-            "name": "Apple Music",
-            "url": "https://music.apple.com/jp/artist/yuguen/1515931170",
-            "img": "applemusic.svg"
-        },
-        {
-            "name": "LINE MUSIC",
-            "url": "https://lin.ee/llADCkN",
-            "img": "linemusic.webp"
-        },
-        {
-            "name": "Amazon Music",
-            "url": "https://music.amazon.co.jp/artists/B0CH8ZK9VN/yuguen",
-            "img": "amazonmusic.svg"
-        },
-        {
-            "name": "YouTube Music",
-            "url": "https://music.youtube.com/channel/UCoHtEy-2P3S9WHFpJuLuTRA?si=zhl2NITD3q-pZwA1",
-            "img": "youtubemusic.svg"
-        },
-        
-        {
-            "name": "Deezer",
-            "url": "https://www.deezer.com/artist/229228105",
-            "img": "deezer.webp"
-        },
-        {
-            "name": "AWA",
-            "url": "https://mf.awa.fm/4670s8n",
-            "img": "awa.webp"
-        }   
-    ],
-    "socials": [
-        {
-            "name": "YouTube",
-            "url": "http://www.youtube.com/channel/UCa0P5OXJPeV_KsXqyDhuTAg?sub_confirmation=1",
-            "img": "youtube.svg"
-        },
-        {
-            "name": "Instagram",
-            "url": "https://www.instagram.com/yuguennooto/",
-            "img": "instagram.svg"
-        },
-        {
-            "name": "X",
-            "url": "https://x.com/YuguenNote",
-            "img": "x.svg"
-        },
-        {
-            "name": "TikTok",
-            "url": "https://vt.tiktok.com/ZSdcJhEPB/",
-            "img": "tiktok.svg"
-        },
-        {
-            "name": "Threads",
-            "url": "https://www.threads.net/@yuguennooto",
-            "img": "threads.svg"
-        },
-        {
-            "name": "Facebook",
-            "url": "https://www.facebook.com/profile.php?id=100087584100211",
-            "img": "facebook.svg"
-        }
-    ],
-    "other": [
-        {
-            "name": "ゆうげんオルガンチャンネル",
-            "url": "https://www.youtube.com/channel/UCbxR7dg7VSlF4bh3oTUETKg?sub_comfirmation=1",
-            "img": "yuguen-organ.webp"
-        },
-        { 
-            "name": "Audiostock (国内)",
-            "url": "https://audiostock.jp/artists/56437",
-            "img": "audiostock.webp"
-        },
-        {
-            "name": "Audiostock (Global)",
-            "url": "https://audiostock.net/artists/7635",
-            "img": "audiostock-global.webp"
-        },
-        {
-            "name": "KENDRIX",
-            "url": "https://kendrix.jp/profiles/7a29a277-864d-49d6-ac9d-d40a8d781612/creator_profile",
-            "img": "kendrix.webp"
-        }
+[
+  {
+    "title": "Music",
+    "links": [
+      {
+        "name": "Spotify",
+        "url": "https://open.spotify.com/artist/32ayXtD1UKJ6Ue6lyvs7tV",
+        "img": "spotify.svg"
+      },
+      {
+        "name": "Apple Music",
+        "url": "https://music.apple.com/jp/artist/yuguen/1515931170",
+        "img": "applemusic.svg"
+      },
+      {
+        "name": "LINE MUSIC",
+        "url": "https://lin.ee/llADCkN",
+        "img": "linemusic.webp"
+      },
+      {
+        "name": "Amazon Music",
+        "url": "https://music.amazon.co.jp/artists/B0CH8ZK9VN/yuguen",
+        "img": "amazonmusic.svg"
+      },
+      {
+        "name": "YouTube Music",
+        "url": "https://music.youtube.com/channel/UCoHtEy-2P3S9WHFpJuLuTRA?si=zhl2NITD3q-pZwA1",
+        "img": "youtubemusic.svg"
+      },
+
+      {
+        "name": "Deezer",
+        "url": "https://www.deezer.com/artist/229228105",
+        "img": "deezer.webp"
+      },
+      {
+        "name": "AWA",
+        "url": "https://mf.awa.fm/4670s8n",
+        "img": "awa.webp"
+      }
     ]
-}
+  },
+  {
+    "title": "Socials",
+    "links": [
+      {
+        "name": "YouTube",
+        "url": "http://www.youtube.com/channel/UCa0P5OXJPeV_KsXqyDhuTAg?sub_confirmation=1",
+        "img": "youtube.svg"
+      },
+      {
+        "name": "Instagram",
+        "url": "https://www.instagram.com/yuguennooto/",
+        "img": "instagram.svg"
+      },
+      {
+        "name": "X",
+        "url": "https://x.com/YuguenNote",
+        "img": "x.svg"
+      },
+      {
+        "name": "TikTok",
+        "url": "https://vt.tiktok.com/ZSdcJhEPB/",
+        "img": "tiktok.svg"
+      },
+      {
+        "name": "Threads",
+        "url": "https://www.threads.net/@yuguennooto",
+        "img": "threads.svg"
+      },
+      {
+        "name": "Facebook",
+        "url": "https://www.facebook.com/profile.php?id=100087584100211",
+        "img": "facebook.svg"
+      }
+    ]
+  },
+  {
+    "title": "Other",
+    "links": [
+      {
+        "name": "ゆうげんオルガンチャンネル",
+        "url": "https://www.youtube.com/channel/UCbxR7dg7VSlF4bh3oTUETKg?sub_comfirmation=1",
+        "img": "yuguen-organ.webp"
+      },
+      {
+        "name": "Audiostock (国内)",
+        "url": "https://audiostock.jp/artists/56437",
+        "img": "audiostock.webp"
+      },
+      {
+        "name": "Audiostock (Global)",
+        "url": "https://audiostock.net/artists/7635",
+        "img": "audiostock-global.webp"
+      },
+      {
+        "name": "KENDRIX",
+        "url": "https://kendrix.jp/profiles/7a29a277-864d-49d6-ac9d-d40a8d781612/creator_profile",
+        "img": "kendrix.webp"
+      }
+    ]
+  }
+]
