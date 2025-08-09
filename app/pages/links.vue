@@ -24,14 +24,14 @@
 
     <section v-for="section in sections" :key="section.title" class="w-full max-w-md mb-6">
       <h2 class="text-xl font-semibold mb-3 pb-2 text-center text-white">
-        Music
+        {{ section.title }}
       </h2>
       <ul class="space-y-4">
         <li v-for="link in section.links" :key="link.name">
           <a :href="link.url" target="_blank"
             class="flex items-center p-2 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105 bg-white bg-opacity-80">
             <div class="flex items-center justify-center w-14 min-w-[56px]">
-              <img v-if="link.img" :src="`/images/${link.img}`" alt="" class="w-[45px] h-[45px] rounded-lg" />
+              <img v-if="link.img" :src="`/images/services/${link.img}`" alt="" class="w-[45px] h-[45px] rounded-lg" />
               <div v-else class="w-[45px] h-[45px]"></div>
             </div>
 
@@ -49,6 +49,8 @@
 
 <script setup>
 import sections from '../data/links.json';
+import { platforms } from '../data/platforms.json';
+import { getPlatformInfo} from '../utils/utils.js';
 
 definePageMeta({
   layout: false,

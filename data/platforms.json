@@ -36,6 +36,72 @@
       "name_ja": "AWA",
       "name_en": "AWA",
       "img": "awa.webp"
+    },
+    {
+      "id": "audiostock",
+      "name_ja": "Audiostock (国内)",
+      "name_en": "Audiostock (Japan)",
+      "img": "audiostock.webp"
+    },
+    {
+      "id": "audiostock-global",
+      "name_ja": "Audiostock (海外)",
+      "name_en": "Audiostock (Global)",
+      "img": "audiostock-global.webp"
+    },
+    {
+      "id": "deezer",
+      "name_ja": "Deezer",
+      "name_en": "Deezer",
+      "img": "deezer.webp"
+    },
+    {
+      "id": "youtube",
+      "name_ja": "YouTube",
+      "name_en": "YouTube",
+      "img": "youtube.svg"
+    },
+    {
+      "id": "x",
+      "name_ja": "X (旧Twitter)",
+      "name_en": "X (Twitter)",
+      "img": "x.svg"
+    },
+    {
+      "id": "instagram",
+      "name_ja": "Instagram",
+      "name_en": "Instagram",
+      "img": "instagram.svg"
+    },
+    {
+      "id": "tiktok",
+      "name_ja": "TikTok",
+      "name_en": "TikTok",
+      "img": "tiktok.svg"
+    },
+    {
+      "id": "threads",
+      "name_ja": "Threads",
+      "name_en": "Threads",
+      "img": "threads.svg"
+    },
+    {
+      "id": "official-website",
+      "name_ja": "公式Webサイト",
+      "name_en": "Official Website",
+      "img": "yuguen.webp"
+    },
+    {
+      "id": "yuguen-organ",
+      "name_ja": "ゆうげんオルガンチャンネル",
+      "name_en": "Yuguen's E. Organ Channel",
+      "img": "yuguen-organ.svg"
+    },
+    {
+      "id": "kendrix",
+      "name_ja": "KENDRIX",
+      "name_en": "KENDRIX",
+      "img": "kendrix.webp"
     }
   ]
 }

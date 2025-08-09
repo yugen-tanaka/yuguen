@@ -79,6 +79,11 @@
     "title": "Other",
     "links": [
       {
+        "name":"オフィシャルWebサイト",
+        "url":"https://yuguen-music.vercel.app/",
+        "img":"yuguen.webp"
+      },
+      {
         "name": "ゆうげんオルガンチャンネル",
         "url": "https://www.youtube.com/channel/UCbxR7dg7VSlF4bh3oTUETKg?sub_comfirmation=1",
         "img": "yuguen-organ.webp"

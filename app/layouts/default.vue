@@ -22,7 +22,7 @@ import { SpeedInsights } from '@vercel/speed-insights/vue';
             <li><NuxtLink to="/news" class="text-gray-600 hover:text-gray-900 transition-colors">News</NuxtLink></li>
             <li><NuxtLink to="/profile" class="text-gray-600 hover:text-gray-900 transition-colors">Profile</NuxtLink></li>
             <li><NuxtLink to="/discography" class="text-gray-600 hover:text-gray-900 transition-colors">Discography</NuxtLink></li>
-            <li><NuxtLink to="/links" class="text-gray-600 hover:text-gray-900 transition-colors">Links</NuxtLink></li>
+            <li><NuxtLink to="/links" target="_blank" class="text-gray-600 hover:text-gray-900 transition-colors">Links</NuxtLink></li>
           </ul>
         </nav>
       </div>
