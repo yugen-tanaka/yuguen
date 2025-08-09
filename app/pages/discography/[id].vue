@@ -23,7 +23,7 @@
 
             <div class="flex items-center justify-center w-14 min-w-[56px]">
               <img v-if="getPlatformInfo(platformLink.id, platforms)?.img"
-                :src="`/images/${getPlatformInfo(platformLink.id, platforms).img}`"
+                :src="`/images/services/${getPlatformInfo(platformLink.id, platforms).img}`"
                 :alt="getPlatformInfo(platformLink.id, platforms)?.name" class="w-8 h-8" />
             </div>
 
