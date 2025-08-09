@@ -74,6 +74,12 @@
       "img": "instagram.svg"
     },
     {
+      "id": "facebook",
+      "name_ja": "Facebook",
+      "name_en": "Facebook",
+      "img": "facebook.svg"
+    },
+    {
       "id": "tiktok",
       "name_ja": "TikTok",
       "name_en": "TikTok",
@@ -95,7 +101,7 @@
       "id": "yuguen-organ",
       "name_ja": "ゆうげんオルガンチャンネル",
       "name_en": "Yuguen's E. Organ Channel",
-      "img": "yuguen-organ.svg"
+      "img": "yuguen-organ.webp"
     },
     {
       "id": "kendrix",

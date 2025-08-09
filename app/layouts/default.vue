@@ -12,7 +12,7 @@ import { SpeedInsights } from '@vercel/speed-insights/vue';
         <NuxtLink to="/" class="flex items-center gap-3">
           <img src="/images/yuguen.webp" alt="Yuguen Logo" class="w-10 h-10">
           <div>
-            <h1 class="text-2xl font-bold text-gray-900">Yuguen</h1>
+            <h1 class="text-2xl font-bold text-[rgb(0,154,183)]">Yuguen</h1>
             <p class="text-xs text-gray-500">ゆうげん</p>
           </div>
         </NuxtLink>

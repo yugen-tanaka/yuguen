@@ -3,7 +3,7 @@
     <div class="bg-[rgb(0,154,183)]">
       <section class="container mx-auto px-4 py-12 text-center">
         <h1 class="text-6xl md:text-8xl font-bold mb-4 text-white">Yuguen</h1>
-        <p class="text-2xl text-gray-300">ゆうげん</p>
+        <p class="text-2xl text-gray-100">ゆうげん</p>
         <p class="mt-4 text-lg text-white">ピアノ、インスト、歌もの楽曲を制作しています。</p>
       </section>
     </div>
@@ -33,7 +33,7 @@
       </section>
 
       <section class="mb-12">
-        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Recent News</h2>
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">News</h2>
         <ul class="divide-y divide-gray-200 max-w-2xl mx-auto">
           <li v-for="newsItem in sortedNews.slice(0, 3)" :key="newsItem.id">
             <NuxtLink :to="newsItem.url || `/news/${newsItem.id}`" :target="newsItem.url ? '_blank' : undefined"
@@ -64,7 +64,7 @@
         <div class="flex justify-center items-center gap-6">
           <a v-for="link in socialLinks" :key="link.name" :href="link.url" target="_blank"
             class="text-gray-600 hover:text-gray-900 transition-colors">
-            <Icon :name="`simple-icons:${link.name.toLowerCase()}`" class="w-8 h-8" />
+            <Icon :name="`simple-icons:${link.id.toLowerCase()}`" class="w-8 h-8" />
           </a>
         </div>
       </section>
@@ -74,9 +74,10 @@
 
 <script setup>
 import discographyData from '../data/discography.json';
+import { platforms } from '../data/platforms.json';
 import { newsData } from '../data/news.json';
 import linksData from '../data/links.json';
-import { formatDate, formatReleaseType } from '../utils/utils.js';
+import { formatDate, formatReleaseType, getPlatformInfo } from '../utils/utils.js';
 
 const sortedNews = [...newsData].sort((a, b) => {
   return new Date(b.publishedAt) - new Date(a.publishedAt);

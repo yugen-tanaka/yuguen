@@ -21,5 +21,6 @@ export const formatReleaseType = (releaseType, lang='ja') => {
     const releaseTypeText = typeDict[releaseType][lang]
     
     return releaseTypeText
-
+    
 };
+
