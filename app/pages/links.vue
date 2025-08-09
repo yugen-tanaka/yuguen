@@ -1,59 +1,56 @@
 <template>
-    <div class="flex flex-col items-center p-4 bg-[rgb(0,154,183)]">
+  <div class="flex flex-col items-center p-4 bg-[rgb(0,154,183)]">
 
-        <div class="flex items-center gap-4 pb-4">
-            <img src="/images/yuguen.webp" alt="Yuguen" class="w-12 h-12">
-            <h1 class="text-4xl font-bold text-white">
-                Yuguen
-            </h1>
-            <div class="flex items-center text-white">
-                <Icon name="heroicons:map-pin-16-solid" class="mr-1" />
-                Tokyo, Japan
-            </div>
-        </div>
-
-        <div class="bg-white bg-opacity-80 p-4 rounded-xl shadow-none border-none w-full max-w-md mb-6">
-            <div class="text-center font-bold text-sm uppercase text-black">
-                NEWS
-            </div>
-
-            <div class="mt-4 text-black text-center">
-                <p v-html="latestReleaseText"></p>
-            </div>
-        </div>
-
-        <section v-for="section in sections" :key="section.title" class="w-full max-w-md mb-6">
-            <h2 class="text-xl font-semibold mb-3 pb-2 text-center text-white">
-                {{ section.title }}
-            </h2>
-            <ul class="space-y-4">
-                <li v-for="link in section.links" :key="link.id">
-                    <a :href="link.url" target="_blank"
-                        class="flex items-center p-2 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105 bg-white bg-opacity-80">
-                        <div class="flex items-center justify-center w-14 min-w-[56px]">
-                            <img v-if="link.img" :src="`/images/services/${link.img}`" alt=""
-                                class="w-[45px] h-[45px] rounded-lg" />
-                            <div v-else class="w-[45px] h-[45px]"></div>
-                        </div>
-
-                        <div class="flex-1 min-w-0 text-center">
-                            <span class="font-bold text-lg">{{ link.name_ja }}</span>
-                        </div>
-
-                        <div class="w-14 min-w-[56px]"></div>
-                    </a>
-                </li>
-            </ul>
-        </section>
+    <div class="flex items-center gap-4 pb-4">
+      <img src="/images/yuguen.webp" alt="Yuguen" class="w-12 h-12" />
+      <h1 class="text-4xl font-bold text-white">Yuguen</h1>
+      <div class="flex items-center text-white">
+        <Icon name="heroicons:map-pin-16-solid" class="mr-1" />
+        Tokyo, Japan
+      </div>
     </div>
+
+    <div class="bg-white bg-opacity-80 p-4 rounded-xl shadow-none border-none w-full max-w-md mb-6">
+      <div class="text-center font-bold text-sm uppercase text-black">NEWS</div>
+      <div class="mt-4 text-black text-center">
+        <p v-html="latestReleaseText"></p>
+      </div>
+    </div>
+
+    <section v-for="section in sections" :key="section.title" class="w-full max-w-md mb-6">
+      <h2 class="text-xl font-semibold mb-3 pb-2 text-center text-white">{{ section.title }}</h2>
+      <ul class="space-y-4">
+        <li v-for="link in section.links" :key="link.id">
+          <a :href="link.url" target="_blank"
+             class="flex items-center p-2 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105 bg-white bg-opacity-80">
+            <div class="flex items-center justify-center w-14 min-w-[56px]">
+              <img v-if="link.img" :src="`/images/services/${link.img}`" alt="" class="w-[45px] h-[45px] rounded-lg" />
+              <div v-else class="w-[45px] h-[45px]"></div>
+            </div>
+
+            <div class="flex-1 min-w-0 text-center">
+              <span class="font-bold text-lg">
+                <!-- userLangに応じて表示切替 -->
+                {{ userLang === 'ja' ? link.name_ja : (link.name_en || link.name_ja) }}
+              </span>
+            </div>
+
+            <div class="w-14 min-w-[56px]"></div>
+          </a>
+        </li>
+      </ul>
+    </section>
+  </div>
 </template>
 
 <script setup>
+import { onMounted, ref } from 'vue';
 import sectionsData from '../data/links.json';
 import { platforms } from '../data/platforms.json';
 import { getPlatformInfo, formatReleaseType, formatReleaseCategory } from '../utils/utils.js';
 import discography from '../data/discography.json';
 
+const userLang = ref('ja');
 const sections = sectionsData.map((section) => {
     const updatedSection = { ...section };
     updatedSection.links = section.links.map((link) => {
@@ -66,6 +63,7 @@ const sections = sectionsData.map((section) => {
     return updatedSection;
 });
 
+// --- 日付処理系 ---
 function parseYMDToLocalDate(ymd) {
     if (!ymd) return null;
     const parts = ymd.split('-').map((p) => parseInt(p, 10));
@@ -79,8 +77,11 @@ function getTodayStart() {
     return new Date(now.getFullYear(), now.getMonth(), now.getDate());
 }
 
-function formatMMDD(date) {
+function formatMMDD(date, lang = 'ja') {
     if (!date) return '';
+    if (lang === 'ja') {
+        return `${date.getMonth() + 1}月${date.getDate()}日`;
+    }
     const mm = String(date.getMonth() + 1).padStart(2, '0');
     const dd = String(date.getDate()).padStart(2, '0');
     return `${mm}/${dd}`;
@@ -101,6 +102,7 @@ function findLatestRelease(discoArray) {
     return latest;
 }
 
+// --- テキスト生成 ---
 function generateReleaseText(lang = "ja") {
     const latest = findLatestRelease(discography);
     if (!latest) return '';
@@ -109,9 +111,8 @@ function generateReleaseText(lang = "ja") {
     if (!releaseDate) return '';
 
     const today = getTodayStart();
-    const dateStr = formatMMDD(releaseDate);
+    const dateStr = formatMMDD(releaseDate, lang);
 
-    // 多言語テキスト辞書
     const textMap = {
         ja: {
             release: "配信リリース!",
@@ -130,40 +131,32 @@ function generateReleaseText(lang = "ja") {
     };
     const t = textMap[lang] || textMap.ja;
 
-    // カテゴリとタイプのフォーマット
-    const typeText = formatReleaseType(latest.type, lang);           // "シングル" / "アルバム" / "Single" / "Album"
-    const categoryText = formatReleaseCategory(latest.category, lang); // "ピアノ" / "インスト" / "" / "Piano" etc.
+    const typeText = formatReleaseType(latest.type, lang);
+    const categoryText = formatReleaseCategory(latest.category, lang);
 
-    // タイトル部分の生成ルール
     let descriptor;
     if (lang === "ja") {
         if (latest.category === "vocal") {
-            // カテゴリ名なし
             descriptor = (latest.type === "single") ? "新曲" : "新アルバム";
         } else {
-            // カテゴリ名あり
-            if (latest.type === "single") {
-                descriptor = `新${categoryText}曲`;   // 例: 新ピアノ曲
-            } else {
-                descriptor = `新${categoryText}アルバム`; // 例: 新インストアルバム
-            }
+            descriptor = (latest.type === "single")
+                ? `新${categoryText}曲`
+                : `新${categoryText}アルバム`;
         }
     } else {
         if (latest.category === "vocal") {
             descriptor = (latest.type === "single")
-                ? `New ${typeText}`    // New Single
-                : `New ${typeText}`;   // New Album
+                ? `New ${typeText}`
+                : `New ${typeText}`;
         } else {
             descriptor = (latest.type === "single")
-                ? `New ${categoryText} ${typeText}`  // New Piano Single
-                : `New ${categoryText} ${typeText}`; // New Piano Album
+                ? `New ${categoryText} ${typeText}`
+                : `New ${categoryText} ${typeText}`;
         }
     }
-    const releaseTitle = lang==='ja' ? `『${latest.title}』` : `"${latest.title_en}"`
-
+    const releaseTitle = lang === 'ja' ? `『${latest.title}』` : `"${latest.title_en}"`;
     const baseText = `${dateStr} ${descriptor}${releaseTitle}`;
 
-    // リリース済みかどうか
     const isReleased = releaseDate <= today;
 
     if (isReleased) {
@@ -179,7 +172,16 @@ function generateReleaseText(lang = "ja") {
     }
 }
 
-const latestReleaseText = generateReleaseText();
+// --- デフォルトは日本語 ---
+const latestReleaseText = ref(generateReleaseText('ja'));
+
+// --- マウント後に英語環境なら差し替え ---
+onMounted(() => {
+    if (navigator.language && !navigator.language.startsWith('ja')) {
+        latestReleaseText.value = generateReleaseText('en');
+        userLang.value = 'en';
+    }
+});
 
 definePageMeta({
     layout: false,
