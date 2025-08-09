@@ -1,0 +1,248 @@
+[
+    {
+        "id": "flow",
+        "title": "FLOW",
+        "title_en": "FLOW",
+        "release_date": "2022-06-22",
+        "url": "",
+        "type": "album",
+        "category": "piano",
+        "description": "",
+        "description_en": "",
+        "platformUrls": [
+            {
+                "id": "spotify",
+                "url": "https://open.spotify.com/album/0pYJuMhp1TXLnrwNRbPtxe"
+            },
+            {
+                "id": "apple-music",
+                "url": "https://music.apple.com/jp/album/flow/1623352057"
+            },
+            {
+                "id": "youtube-music",
+                "url": "https://music.youtube.com/playlist?list=OLAK5uy_nkhV_3wfOoDOhYoU0x0wQtGJ5Wj_dpPrw"
+            },
+            {
+                "id": "amazon-music",
+                "url": "https://music.amazon.co.jp/albums/B09ZV24PFR7"
+            },
+            {
+                "id": "line-music",
+                "url": "https://music.line.me/webapp/album/mb00000000027297de"
+            },
+            {
+                "id": "awa",
+                "url": "https://mf.awa.fm/459Irp1"
+            }
+        ]
+    },
+    {
+        "id": "hisame",
+        "title": "氷雨",
+        "title_en": "Hisame",
+        "release_date": "2022-10-13",
+        "url": "https://ditto.fm/hisame",
+        "type": "single",
+        "category": "piano",
+        "description": "",
+        "description_en": ""
+    },
+    {
+        "id": "edge-of-clouds",
+        "title": "Edge of Clouds",
+        "title_en": "Edge of Clouds",
+        "release_date": "2022-10-16",
+        "url": "https://ditto.fm/edge-of-clouds",
+        "type": "single",
+        "category": "vocal",
+        "description": "",
+        "description_en": ""
+    },
+    {
+        "id": "karuizawa",
+        "title": "Karuizawa",
+        "title_en": "Karuizawa",
+        "release_date": "2022-10-30",
+        "url": "https://ditto.fm/karuizawa",
+        "type": "album",
+        "category": "piano",
+        "description": "",
+        "description_en": ""
+    },
+    {
+        "id": "seaside-cruising",
+        "title": "Seaside Cruising",
+        "title_en": "Seaside Cruising",
+        "release_date": "2023-09-06",
+        "url": "https://ditto.fm/seaside-cruising",
+        "type": "single",
+        "category": "instrumental",
+        "description": "",
+        "description_en": ""
+    },
+    {
+        "id": "kokowadokono",
+        "title": "Kokowadokono",
+        "title_en": "Kokowadokono",
+        "release_date": "2023-10-13",
+        "url": "https://ditto.fm/kokowadokono",
+        "type": "single",
+        "category": "piano",
+        "description": "",
+        "description_en": ""
+    },
+    {
+        "id": "song-of-the-winds-in-g-major",
+        "title": "Song of the Winds in G Major",
+        "title_en": "Song of the Winds in G Major",
+        "release_date": "2023-11-23",
+        "url": "https://ditto.fm/song-of-the-winds-in-g-major",
+        "type": "single",
+        "category": "piano",
+        "description": "",
+        "description_en": ""
+    },
+    {
+        "id": "my-shop",
+        "title": "My Shop",
+        "title_en": "My Shop",
+        "release_date": "2023-12-08",
+        "url": "https://ditto.fm/my-shop",
+        "type": "single",
+        "category": "vocal",
+        "description": "",
+        "description_en": ""
+    },
+    {
+        "id": "alpaca",
+        "title": "Alpaca",
+        "title_en": "Alpaca",
+        "release_date": "2024-01-19",
+        "url": "https://ditto.fm/alpaca",
+        "type": "single",
+        "category": "vocal",
+        "description": "",
+        "description_en": ""
+    },
+    {
+        "id": "night-walk",
+        "title": "Night Walk",
+        "title_en": "Night Walk",
+        "release_date": "2024-02-16",
+        "url": "https://ditto.fm/night-walk-yuguen-featuring-gray-heron",
+        "type": "single",
+        "category": "vocal",
+        "description": "",
+        "description_en": ""
+    },
+    {
+        "id": "green",
+        "title": "Green",
+        "title_en": "Green",
+        "release_date": "2024-03-29",
+        "url": "https://ditto.fm/green-yuguen",
+        "type": "album",
+        "category": "instrumental",
+        "description": "",
+        "description_en": ""
+    },
+    {
+        "id": "circulation",
+        "title": "Circulation",
+        "title_en": "Circulation",
+        "release_date": "2024-05-10",
+        "url": "https://ditto.fm/circulation-yuguen",
+        "type": "single",
+        "category": "piano",
+        "description": "",
+        "description_en": ""
+    },
+    {
+        "id": "song-of-the-winds-in-c-major",
+        "title": "Song of the Winds In C Major",
+        "title_en": "Song of the Winds In C Major",
+        "release_date": "2024-10-18",
+        "url": "https://ditto.fm/song-of-the-winds-in-c-major",
+        "type": "single",
+        "category": "piano",
+        "description": "",
+        "description_en": ""
+    },
+    {
+        "id": "after-the-rain",
+        "title": "After the Rain",
+        "title_en": "After the Rain",
+        "release_date": "2024-11-15",
+        "url": "https://ditto.fm/after-the-rain-yuguen",
+        "type": "single",
+        "category": "piano",
+        "description": "",
+        "description_en": ""
+    },
+    {
+        "id": "morning-glow",
+        "title": "朝の光に",
+        "title_en": "Morning Glow",
+        "release_date": "2025-02-07",
+        "url": "",
+        "type": "single",
+        "category": "piano",
+        "description": "",
+        "description_en": "",
+        "platformUrls": [
+            {
+                "id": "spotify",
+                "url": "https://open.spotify.com/album/0WPv5ld0NYsLOuF7VUOEvy"
+            },
+            {
+                "id": "apple-music",
+                "url": "https://music.apple.com/jp/album/%E6%9C%9D%E3%81%AE%E5%85%89%E3%81%AB-single/1793397553"
+            },
+            {
+                "id": "youtube-music",
+                "url": "https://music.youtube.com/playlist?list=OLAK5uy_kD5_oSyNs0nggHTEHv7_F1c57o43FHmLQ&si=zqGf0jOuhC7ypE5r"
+            },
+            {
+                "id": "amazon-music",
+                "url": "https://music.amazon.co.jp/albums/B0DVDF37MK"
+            },
+            {
+                "id": "awa",
+                "url": "https://mf.awa.fm/3UnAerb"
+            }
+        ]
+    },
+    {
+        "id": "westwood",
+        "title": "Westwood",
+        "title_en": "Westwood",
+        "release_date": "2025-02-21",
+        "url": "https://ditto.fm/westwood-yuguen",
+        "type": "single",
+        "category": "piano",
+        "description": "",
+        "description_en": ""
+    },
+    {
+        "id": "banh-mi",
+        "title": "Banh Mi",
+        "title_en": "Banh Mi",
+        "release_date": "2025-03-07",
+        "url": "https://linkco.re/qvTAHH7H",
+        "type": "single",
+        "category": "vocal",
+        "description": "Yuguenが2025年3月7日に約1年となる歌もの楽曲『Bahn Mi』をリリース。 『Banh Mi』は、ベトナムの人気サンドイッチ「バインミー」をテーマにした楽曲であり、東南アジアの温かい風を感じさせるリラックスした雰囲気と、軽やかで心地よいメロディーが特徴となっている。思わず口ずさみたくなる「バインミー、バインミー」のフレーズが印象的で、一度聴いたら忘れられない中毒性のあるサウンドだ。 本作の制作は、演奏、打ち込み、録音、ミキシング、マスタリング、さらにはアートワーク制作に至るまで、すべてYuguen自身が手掛けた。iPad版Logic Proでトラックを作成し、Mac版Logic Proでボーカル録音と最終仕上げを行うという、完全セルフプロデュースの作品となっている。着想から半年以上の制作期間を経て完成し、耳に残るシンプルかつキャッチーな歌詞、東南アジアを思わせるゆったりとした空気感、アコースティックなサウンドとアジアンテイストの間奏がアクセントとなる楽曲に仕上がった。",
+        "description_en": "Yuguen released the vocal track Bahn Mi on March 7, 2025, marking their first song release in about a year. Banh Mi is a song inspired by the popular Vietnamese sandwich, \"Bánh Mì\". It features a relaxing atmosphere reminiscent of the warm breeze of Southeast Asia, combined with a light and pleasant melody. The phrase \"Banh Mi, Banh Mi\" is particularly memorable, making the song irresistibly catchy and unforgettable after just one listen. From performance and programming to recording, mixing, mastering, and even artwork creation, every aspect of this song was handled solely by Yuguen. The track was first created using Logic Pro for iPad, while the vocal recording and final production were completed on Logic Pro for Mac. With over six months of development, the song blends simple yet catchy lyrics, a laid-back Southeast Asian vibe, acoustic elements, and an Asian-inspired instrumental break, resulting in a track that lingers in the listener's mind."
+    },
+    {
+        "id": "kazaguruma",
+        "title": "風ぐるま",
+        "title_en": "Kazaguruma",
+        "release_date": "2025-05-10",
+        "url": "https://linkco.re/80QAdCeQ",
+        "type": "album",
+        "category": "piano",
+        "description": "前作『Karuizawa』から2年半ぶりとなるYuguenのピアノ・アルバム『風ぐるま』。新曲で表題曲の『風車』をはじめ、流れるような『Song of the Winds in G Major』、メランコリックな『Circulation』、ポップな『Kokowadokono』など全14曲を収録。",
+        "description_en": "It has been two and a half years since Yuguen's last piano album, \"Karuizawa\". The album contains 14 tracks, including the new title track \"Kazaguruma,\" the flowing \"Song of the Winds in G Major,\" the melancholic \"Circulation,\" and the pop song \"Kokowadokono."
+    }
+]

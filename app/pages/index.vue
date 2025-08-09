@@ -1,52 +1,92 @@
 <template>
-  <div class="flex flex-col items-center p-4 bg-[rgb(0,154,183)]">
-
-    <div class="flex items-center gap-4  pb-4">
-      <img src="/images/yuguen.webp" alt="Yuguen" class="w-12 h-12">
-      <h1 class="text-4xl font-bold text-white">
-        Yuguen
-      </h1>
-      <div class="flex items-center text-white">
-        <Icon name="heroicons:map-pin-16-solid" class="mr-1" />
-        Tokyo, Japan
-      </div>
-    </div>
-    <div class="bg-white bg-opacity-80 p-4 rounded-xl shadow-none border-none w-full max-w-md mb-6">
-      <div class="text-center font-bold text-sm uppercase text-black">
-        NEWS
-      </div>
-      <div class="mt-4 text-black text-center">
-        <p>5/10 新ピアノアルバム『風ぐるま』配信リリース</p>
-        <p>New piano album "Kazaguruma" is out now!</p>
-        <a href="https://linkco.re/80QAdCeQ" target="_blank" class="text-blue-500 underline">配信リンクはこちら</a>
-      </div>
+  <div>
+    <div class="bg-[rgb(0,154,183)]">
+      <section class="container mx-auto px-4 py-12 text-center">
+        <h1 class="text-6xl md:text-8xl font-bold mb-4 text-white">Yuguen</h1>
+        <p class="text-2xl text-gray-100">ゆうげん</p>
+        <p class="mt-4 text-lg text-white">ピアノ、インスト、歌もの楽曲を制作しています。</p>
+      </section>
     </div>
 
-    <section v-for="section in sections" :key="section.title" class="w-full max-w-md mb-6">
-      <h2 class="text-xl font-semibold mb-3 pb-2 text-center text-white">
-        Music
-      </h2>
-      <ul class="space-y-4">
-        <li v-for="link in section.links" :key="link.name">
-          <a :href="link.url" target="_blank"
-            class="flex items-center p-2 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105 bg-white bg-opacity-80">
-            <div class="flex items-center justify-center w-14 min-w-[56px]">
-              <img v-if="link.img" :src="`/images/${link.img}`" alt="" class="w-[45px] h-[45px] rounded-lg" />
-              <div v-else class="w-[45px] h-[45px]"></div>
+    <div class="container mx-auto px-4 py-12">
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Latest Release</h2>
+        <div class="text-center">
+          <NuxtLink :to="latestRelease.url || `/discography/${latestRelease.id}`" target="_blank"
+            class="inline-block max-w-sm">
+            <img :src="`/images/artworks/${latestRelease.id}.webp`" :alt="latestRelease.title"
+              class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+            <h2 class="mt-2 text-lg font-semibold text-center text-black">{{ latestRelease.title }}</h2>
+            <p class="text-sm text-center text-neutral-500">{{ formatDate(latestRelease.release_date) }}・{{
+              formatReleaseType(latestRelease.type) }}</p>
+          </NuxtLink>
+        </div>
+        <div class="text-center mt-8">
+          <NuxtLink to="/discography"
+            class="inline-block text-gray-600 border border-gray-400 py-2 px-6 rounded-full hover:bg-gray-100 transition">
+            <div class="flex item-center">
+              View More
+              <Icon name="formkit:arrowright" class="ml-2 relative translate-y-1"></Icon>
+            </div>
+          </NuxtLink>
+        </div>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">News</h2>
+        <ul class="divide-y divide-gray-200 max-w-2xl mx-auto">
+          <li v-for="newsItem in sortedNews.slice(0, 3)" :key="newsItem.id">
+            <NuxtLink :to="newsItem.url || `/news/${newsItem.id}`" :target="newsItem.url ? '_blank' : undefined"
+              class="flex items-center py-4 hover:bg-gray-50 transition-colors group">
+              <div class="w-32 flex-shrink-0 text-gray-500 group-hover:text-gray-700">
+                {{ formatDate(newsItem.publishedAt) }}
+              </div>
+              <p class="flex-1 text-gray-800 group-hover:text-gray-900">
+                {{ newsItem.title }}
+              </p>
+            </NuxtLink>
+          </li>
+        </ul>
+        <div class="text-center mt-8">
+          <NuxtLink to="/news"
+            class="inline-block text-gray-600 border border-gray-400 py-2 px-6 rounded-full hover:bg-gray-100 transition">
+            <div class="flex item-center">
+              View More
+            <Icon name="formkit:arrowright" class="ml-2 relative translate-y-1"></Icon>
             </div>
 
-            <div class="flex-1 min-w-0 text-center">
-              <span class="font-bold text-lg">{{ link.name }}</span>
-            </div>
+          </NuxtLink>
+        </div>
+      </section>
 
-            <div class="w-14 min-w-[56px]"></div>
+      <section class="text-center mb-12">
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Follow Me</h2>
+        <div class="flex justify-center items-center gap-6">
+          <a v-for="link in socialLinks" :key="link.name" :href="link.url" target="_blank"
+            class="text-gray-600 hover:text-gray-900 transition-colors">
+            <Icon :name="`simple-icons:${link.id.toLowerCase()}`" class="w-8 h-8" />
           </a>
-        </li>
-      </ul>
-    </section>
+        </div>
+      </section>
+    </div>
   </div>
 </template>
 
 <script setup>
-import sections from '../data/links.json';
+import discographyData from '../data/discography.json';
+import { platforms } from '../data/platforms.json';
+import { newsData } from '../data/news.json';
+import linksData from '../data/links.json';
+import { formatDate, formatReleaseType, getPlatformInfo } from '../utils/utils.js';
+
+const sortedNews = [...newsData].sort((a, b) => {
+  return new Date(b.publishedAt) - new Date(a.publishedAt);
+});
+
+const sortedReleases = [...discographyData].sort((a, b) => {
+  return new Date(b.release_date) - new Date(a.release_date);
+});
+const latestRelease = sortedReleases[0];
+
+const socialLinks = linksData.find(section => section.title === 'Socials')?.links || [];
 </script>

@@ -1,0 +1,32 @@
+{
+    "newsData": [
+        {
+            "id": "20250809-open",
+            "title": "Webサイトを開設しました",
+            "description": "",
+            "url": "",
+            "img": "/images/yuguen.webp",
+            "publishedAt": "2025-08-09",
+            "content": ""
+        },
+        {
+            "id": "20250510-kazaguruma",
+            "title": "ピアノアルバム「風ぐるま」リリース",
+            "description": "",
+            "url": "https://linkco.re/80QAdCeQ",
+            "img": "",
+            "publishedAt": "2025-05-10",
+            "content": ""
+        }
+        ,
+        {
+            "id": "20250307-banhmi",
+            "title": "「Banh Mi」リリース",
+            "description": "",
+            "url": "https://linkco.re/qvTAHH7H",
+            "img": "",
+            "publishedAt": "2025-03-07",
+            "content": ""
+        }
+    ]
+}
