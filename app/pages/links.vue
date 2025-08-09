@@ -49,4 +49,8 @@
 
 <script setup>
 import sections from '../data/links.json';
+
+definePageMeta({
+  layout: false,
+});
 </script>

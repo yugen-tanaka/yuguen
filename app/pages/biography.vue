@@ -1,0 +1,3 @@
+<template>
+    Biography
+</template>

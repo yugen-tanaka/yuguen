@@ -47,6 +47,10 @@ import discographyData from '../data/discography.json';
 import { platforms } from '../data/platforms.json';
 import { getPlatformInfo, formatDate, formatReleaseType} from '../utils/utils.js';
 
+definePageMeta({
+  layout: false,
+});
+
 const route = useRoute();
 const release = discographyData.find(r => r.id === route.params.id);
 
