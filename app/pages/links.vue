@@ -64,10 +64,10 @@ const sections = sectionsData.map((section) => {
     const name_ja = platformInfo.name_ja;
     const name_en = platformInfo.name_en;
     const img = platformInfo.img;
-    //console.log(typeof(name_ja), 'name_ja')
+    
     return { ...link, name_ja: name_ja, name_en: name_en, img:img };
   });
-  console.log(updatedSection)
+  
   return updatedSection;
 });
 definePageMeta({
