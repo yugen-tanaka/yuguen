@@ -15,20 +15,20 @@
         <!-- タイトルとアーティスト -->
         <h1 class="text-4xl font-bold">{{ release.title }}</h1>
         <p class="text-xl mb-1">Yuguen</p>
-        <p class="text-sm mb-8">{{release.release_date}}</p>
+        <p class="text-sm mb-8">{{formatDate(release.release_date)}}・{{formatReleaseType(release.type,'ja')}}</p>
         <!-- 配信リンク一覧 -->
         <div v-if="release.platformUrls && release.platformUrls.length > 0" class="space-y-4">
           <a v-for="platformLink in release.platformUrls" :key="platformLink.id" :href="platformLink.url" target="_blank"
             class="flex items-center p-3 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105 bg-white bg-opacity-90 text-black font-bold text-lg">
 
             <div class="flex items-center justify-center w-14 min-w-[56px]">
-              <img v-if="getPlatformInfo(platformLink.id)?.img"
-                :src="`/images/${getPlatformInfo(platformLink.id).img}`"
-                :alt="getPlatformInfo(platformLink.id)?.name" class="w-8 h-8" />
+              <img v-if="getPlatformInfo(platformLink.id, platforms)?.img"
+                :src="`/images/${getPlatformInfo(platformLink.id, platforms).img}`"
+                :alt="getPlatformInfo(platformLink.id, platforms)?.name" class="w-8 h-8" />
             </div>
 
             <div class="flex-1 text-center">
-              <span>{{ getPlatformInfo(platformLink.id)?.name_ja || platformLink.id }}</span>
+              <span>{{ getPlatformInfo(platformLink.id, platforms)?.name_ja || platformLink.id }}</span>
             </div>
 
             <div class="w-14 min-w-[56px]"></div>
@@ -45,6 +45,7 @@
 <script setup>
 import discographyData from '../data/discography.json';
 import { platforms } from '../data/platforms.json';
+import { getPlatformInfo, formatDate, formatReleaseType} from '../utils/utils.js';
 
 const route = useRoute();
 const release = discographyData.find(r => r.id === route.params.id);
@@ -53,7 +54,5 @@ if (!release) {
   throw createError({ statusCode: 404, statusMessage: 'Release not found' });
 }
 
-const getPlatformInfo = (platformId) => {
-  return platforms.find(p => p.id === platformId);
-};
+
 </script>

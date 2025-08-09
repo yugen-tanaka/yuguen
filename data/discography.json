@@ -188,7 +188,29 @@
         "type": "single",
         "category": "piano",
         "description": "",
-        "description_en": ""
+        "description_en": "",
+        "platformUrls": [
+            {
+                "id": "spotify",
+                "url": "https://open.spotify.com/album/0WPv5ld0NYsLOuF7VUOEvy"
+            },
+            {
+                "id": "apple-music",
+                "url": "https://music.apple.com/jp/album/%E6%9C%9D%E3%81%AE%E5%85%89%E3%81%AB-single/1793397553"
+            },
+            {
+                "id": "youtube-music",
+                "url": "https://music.youtube.com/playlist?list=OLAK5uy_kD5_oSyNs0nggHTEHv7_F1c57o43FHmLQ&si=zqGf0jOuhC7ypE5r"
+            },
+            {
+                "id": "amazon-music",
+                "url": "https://music.amazon.co.jp/albums/B0DVDF37MK"
+            },
+            {
+                "id": "awa",
+                "url": "https://mf.awa.fm/3UnAerb"
+            }
+        ]
     },
     {
         "id": "westwood",

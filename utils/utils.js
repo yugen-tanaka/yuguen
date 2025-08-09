@@ -17,7 +17,7 @@ export const formatReleaseType = (releaseType, lang='ja') => {
     if (!allowedLangs.includes(lang)) {
       lang = 'en';
     }
-    typeDict = {'album': {'ja': 'アルバム', 'en': 'Album'}, 'single': {'ja': 'シングル', 'en': 'Single'}}
+    const typeDict = {'album': {'ja': 'アルバム', 'en': 'Album'}, 'single': {'ja': 'シングル', 'en': 'Single'}}
     const releaseTypeText = typeDict[releaseType][lang]
     
     return releaseTypeText

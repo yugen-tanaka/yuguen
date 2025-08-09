@@ -20,20 +20,11 @@
 
 <script setup>
 import discographyData from '../data/discography.json';
+import { formatDate, formatReleaseType} from '../utils/utils.js';
 
 const discography = [...discographyData].sort((a, b) => {
   return new Date(b.release_date) - new Date(a.release_date);
 });
 
-function formatDate(date) {
-  return date.replaceAll('-', '.')
-};
 
-function formatReleaseType(releaseType) {
-  if (releaseType == 'album') {
-    return 'Album'
-  } else {
-    return 'Single'
-  }
-};
 </script>
