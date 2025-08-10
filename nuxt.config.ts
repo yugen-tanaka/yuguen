@@ -19,15 +19,15 @@ export default defineNuxtConfig({
         { property: 'og:title', content: 'Yuguen' },
         { property: 'og:description', content: 'Yuguen(ゆうげん)の公式アーティストページです。'},
         { property: 'og:type', content: 'website' },
-        { property: 'og:url', content: 'https://yuguen-music.vercel.app/' }, 
-        { property: 'og:image', content: 'https://yuguen-music.vercel.app/ogp.jpg' }, 
+        { property: 'og:url', content: 'https://yuguen.net/' }, 
+        { property: 'og:image', content: 'https://yuguen.net/ogp.jpg' }, 
         
         { name: 'twitter:card', content: 'summary_large_image' },
         { name: 'twitter:site', content: '@YuguenNotes' }, 
         { name: 'twitter:creator', content: '@YuguenNotes' }, 
         { name: 'twitter:title', content: 'Yuguen' },
         { name: 'twitter:description', content: 'Yuguen(ゆうげん)の公式アーティストページです。'},
-        { name: 'twitter:image', content: 'https://yuguen-music.vercel.app/ogp.jpg' }, 
+        { name: 'twitter:image', content: 'https://yuguen.net/ogp.jpg' }, 
       ],
       link: [
         { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico'},
