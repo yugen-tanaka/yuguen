@@ -126,7 +126,7 @@ function generateReleaseText(lang = "ja") {
             releasePlan: "Coming Soon",
             preSave: "Pre-add/Pre-save to your library!",
             linkText: "Listen here",
-            preSaveLinkText: "Pre-add here"
+            preSaveLinkText: "Pre-add/Pre-save here"
         }
     };
     const t = textMap[lang] || textMap.ja;
