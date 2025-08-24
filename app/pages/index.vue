@@ -10,7 +10,7 @@
 
     <div class="container mx-auto px-4 py-12">
       <section class="mb-12">
-        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Latest Release</h2>
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">{{isFuture(latestRelease.release_date) ? "Upcoming" : "Latest"}} Release</h2>
         <div class="text-center">
           <NuxtLink :to="latestRelease.url || `/discography/${latestRelease.id}`" target="_blank"
             class="inline-block max-w-sm">
@@ -87,6 +87,11 @@ const sortedReleases = [...discographyData].sort((a, b) => {
   return new Date(b.release_date) - new Date(a.release_date);
 });
 const latestRelease = sortedReleases[0];
+
+const isFuture = (dateString) => {
+  const date = new Date(dateString);
+  return date > Date.now();
+};
 
 const socialLinks = linksData.find(section => section.title === 'Socials')?.links || [];
 </script>

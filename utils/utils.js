@@ -15,6 +15,7 @@ export const formatReleaseType = (releaseType, lang = "ja") => {
   const typeDict = {
     album: { ja: "アルバム", en: "Album" },
     single: { ja: "シングル", en: "Single" },
+    ep: { ja: "EP", en: "EP"}
   };
   const releaseTypeText = typeDict[releaseType][lang];
 
