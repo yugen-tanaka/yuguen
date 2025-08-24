@@ -244,5 +244,16 @@
         "category": "piano",
         "description": "前作『Karuizawa』から2年半ぶりとなるYuguenのピアノ・アルバム『風ぐるま』。新曲で表題曲の『風車』をはじめ、流れるような『Song of the Winds in G Major』、メランコリックな『Circulation』、ポップな『Kokowadokono』など全14曲を収録。",
         "description_en": "It has been two and a half years since Yuguen's last piano album, \"Karuizawa\". The album contains 14 tracks, including the new title track \"Kazaguruma,\" the flowing \"Song of the Winds in G Major,\" the melancholic \"Circulation,\" and the pop song \"Kokowadokono."
+    },
+    {
+        "id": "august",
+        "title": "August",
+        "title_en": "August",
+        "release_date": "2025-08-31",
+        "url": "https://linkco.re/S9SZAeGM",
+        "type": "single",
+        "category": "instrumental",
+        "description": "",
+        "description_en": ""
     }
 ]
