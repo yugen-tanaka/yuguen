@@ -1,13 +1,22 @@
 {
     "newsData": [
         {
+            "id": "20250831-august-release",
+            "title": "Single「August」配信リリース",
+            "description": "",
+            "url": "",
+            "img": "/images/artworks/august.webp",
+            "publishedAt": "2025-08-31",
+            "content": "インストゥルメンタル・シングル「August」が2025.08.31に配信スタート。<br><br>▼収録曲<br>1. August<br>2. あめふりさんぽ<br><br>夏をイメージした、爽やかさと気だるさを織り交ぜたような雰囲気の楽曲となっています。YouTubeのほか、SpotifyやApple Music、LINE MUSICなど、各種音楽配信サービスでもお聴きいただけます。<br><a href=\"https://linkco.re/S9SZAeGM\" target=\"_blank\" class=\"text-blue-500 underline\">配信リンクはこちら</a>"
+        },
+        {
             "id": "20250825-august-preadd",
             "title": "「August」Pre-Add / Pre-Saveスタート",
             "description": "",
             "url": "",
             "img": "/images/news/august-preadd-presave.gif",
             "publishedAt": "2025-08-25",
-            "content": "「August」と「あめふりさんぽ」の2曲を収録したインストゥルメンタル・シングル「August」が2025.08.31に配信リリース決定。それに先立ち8/25〜事前追加がスタートしました。ぜひApple MusicとSpotify上でPre-Add/Pre-save(事前追加)をしてお待ちください。<br><a href=\"https://linkco.re/S9SZAeGM\" target=\"_blank\" class=\"text-blue-500 underline\">Pre-Add/Pre-Saveはこちら"
+            "content": "「August」と「あめふりさんぽ」の2曲を収録したインストゥルメンタル・シングル「August」が2025.08.31に配信リリース決定。それに先立ち8/25〜事前追加がスタートしました。ぜひApple MusicとSpotify上でPre-Add/Pre-save(事前追加)をしてお待ちください。<br><a href=\"https://linkco.re/S9SZAeGM\" target=\"_blank\" class=\"text-blue-500 underline\">Pre-Add/Pre-Saveはこちら</a>"
         },
         {
             "id": "20250809-open",
