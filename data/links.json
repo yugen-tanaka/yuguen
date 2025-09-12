@@ -55,6 +55,10 @@
       {
         "id": "facebook",
         "url": "https://www.facebook.com/profile.php?id=100087584100211"
+      },
+      {
+        "id": "bluesky",
+        "url": "https://bsky.app/profile/yuguen.net"
       }
     ]
   },

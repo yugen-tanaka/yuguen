@@ -108,6 +108,12 @@
       "name_ja": "KENDRIX",
       "name_en": "KENDRIX",
       "img": "kendrix.webp"
+    },
+    {
+      "id": "bluesky",
+      "name_ja": "Bluesky",
+      "name_en": "Bluesky",
+      "img": "bluesky.webp"
     }
   ]
 }
