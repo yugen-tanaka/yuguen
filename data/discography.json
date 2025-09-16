@@ -267,5 +267,16 @@
         "category": "instrumental",
         "description": "",
         "description_en": ""
+    },
+    {
+        "id": "venezia",
+        "title": "ヴェネツィア",
+        "title_en": "Venezia",
+        "release_date": "2025-10-03",
+        "url": "https://linkco.re/9BSHymYS",
+        "type": "single",
+        "category": "piano",
+        "description": "",
+        "description_en": ""
     }
 ]
