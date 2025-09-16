@@ -1,6 +1,15 @@
 {
     "newsData": [
         {
+            "id": "20250917-venezia-preadd",
+            "title": "「ヴェネツィア」Pre-add/Pre-Saveスタート",
+            "description": "",
+            "url": "",
+            "img": "/images/news/venezia-preadd-presave.gif",
+            "publishedAt": "2025-09-17",
+            "content": "ピアノ曲のシングル「ヴェネツィア」が2025.10.03に配信リリース決定。それに先立ち本日9/17〜事前追加キャンペーンがスタートしました。Apple Music、iTunes StoreとSpotify上でPre-Add/Pre-save(事前追加)をしていただくと、リリース日に自動的にあなたの音楽ライブラリに追加されます。ぜひご利用ください。<br><a href=\"https://linkco.re/9BSHymYS\" target=\"_blank\" class=\"text-blue-500 underline\">Pre-Add/Pre-Saveはこちら</a>"
+        },
+        {
             "id": "20250831-august-release",
             "title": "Single「August」配信リリース",
             "description": "",
