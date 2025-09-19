@@ -12,3 +12,6 @@ Allow: /
 
 User-agent: Gemini-Bot
 Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
