@@ -2,7 +2,14 @@
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/image'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/icon',
+    '@nuxt/image'
+  ],
+  icon: {
+    serverBundle: 'auto',
+  },
   image: {
     format: ['avif', 'webp'],
     // VercelのImage Optimizationを利用するように設定します
