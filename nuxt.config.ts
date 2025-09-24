@@ -9,7 +9,11 @@ export default defineNuxtConfig({
     '@nuxt/image'
   ],
   icon: {
-    serverBundle: 'auto',
+    // アイコンデータをクライアントバンドルに含めることで、サーバーAPIを不要にします
+    clientBundle: {
+      // プロジェクト内のアイコンを自動的にスキャンしてバンドルに含めます
+      scan: true,
+    },
   },
   image: {
     format: ['avif', 'webp'],
