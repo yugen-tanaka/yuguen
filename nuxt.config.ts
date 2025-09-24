@@ -4,15 +4,11 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/image'],
   image: {
-    // AVIFとWebPをサポートし、モダンブラウザでの表示を高速化します
     format: ['avif', 'webp'],
-    // 画質とファイルサイズのバランスを取るための品質設定
     quality: 70,
-    // レスポンシブイメージを生成するためのブレークポイント
     screens: {
       xs: 360, sm: 640, md: 768, lg: 1024, xl: 1280
     },
-    // OGP画像などで使用しているドメインを許可します
     domains: ['www.yuguen.net'],
   },
   tailwindcss: {
@@ -20,8 +16,7 @@ export default defineNuxtConfig({
     viewer: true,
   },
   nitro: {
-    // Vercelのエッジランタイムで動作するようにプリセットを変更します
-    preset: 'vercel-edge',
+    preset: 'vercel',
   },
   routeRules: {
     // トップページを5分間 (300秒) キャッシュし、バックグラウンドで再生成します
