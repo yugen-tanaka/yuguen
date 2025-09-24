@@ -1,7 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  // 開発中は有効にし、本番ビルドでは無効にする
   devtools: { enabled: process.env.NODE_ENV !== 'production' },
   modules: [
     '@nuxtjs/tailwindcss',
@@ -9,15 +8,12 @@ export default defineNuxtConfig({
     '@nuxt/image'
   ],
   icon: {
-    // アイコンデータをクライアントバンドルに含めることで、サーバーAPIを不要にします
     clientBundle: {
-      // プロジェクト内のアイコンを自動的にスキャンしてバンドルに含めます
       scan: true,
     },
   },
   image: {
     format: ['avif', 'webp'],
-    // VercelのImage Optimizationを利用するように設定します
     provider: 'vercel',
     quality: 70,
     screens: {
@@ -30,9 +26,7 @@ export default defineNuxtConfig({
     viewer: true,
   },
   routeRules: {
-    // トップページを5分間 (300秒) キャッシュし、バックグラウンドで再生成します
     '/': { isr: 300 },
-    // 個別の楽曲ページも同様にキャッシュします
     '/discography/**': { isr: 300 },
   },
   app: {
