@@ -29,10 +29,6 @@ export default defineNuxtConfig({
     exposeConfig: true,
     viewer: true,
   },
-  nitro: {
-    // Edge Functionとしてデプロイするために 'vercel-edge' を指定します
-    preset: 'vercel-edge',
-  },
   routeRules: {
     // トップページを5分間 (300秒) キャッシュし、バックグラウンドで再生成します
     '/': { isr: 300 },
