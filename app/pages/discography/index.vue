@@ -4,13 +4,20 @@
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       <div v-for="release in discography" :key="release.id" class="p-2">
         <NuxtLink :to="release.url || `/discography/${release.id}`" target="_blank" class="block">
-          <img :src="`/images/artworks/${release.id}.webp`" :alt="release.title"
+          <NuxtImg 
+          :src="`/images/artworks/${release.id}.webp`" 
+          :alt="release.title" 
+          width="600" 
+          height="600"
+          format="avif"
+          :placeholder="50"
             class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow" />
-          
-            <h2 class="mt-2 text-lg font-semibold text-left text-black">{{ release.title }}</h2>
-            
-          
-          <p class=" text-sm text-left text-neutral-500">{{ formatDate(release.release_date) }}・{{ formatReleaseType(release.type) }}</p>
+
+          <h2 class="mt-2 text-lg font-semibold text-left text-black">{{ release.title }}</h2>
+
+
+          <p class=" text-sm text-left text-neutral-500">{{ formatDate(release.release_date) }}・{{
+            formatReleaseType(release.type) }}</p>
 
         </NuxtLink>
       </div>
@@ -20,7 +27,7 @@
 
 <script setup>
 import discographyData from '../data/discography.json';
-import { formatDate, formatReleaseType} from '../utils/utils.js';
+import { formatDate, formatReleaseType } from '../utils/utils.js';
 
 const discography = [...discographyData].sort((a, b) => {
   return new Date(b.release_date) - new Date(a.release_date);

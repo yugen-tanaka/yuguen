@@ -10,12 +10,14 @@
 
     <div class="container mx-auto px-4 py-12">
       <section class="mb-12">
-        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">{{isFuture(latestRelease.release_date) ? "Upcoming" : "Latest"}} Release</h2>
+        <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">{{ isFuture(latestRelease.release_date) ?
+          "Upcoming" : "Latest" }} Release</h2>
         <div class="text-center">
           <NuxtLink :to="latestRelease.url || `/discography/${latestRelease.id}`" target="_blank"
             class="inline-block max-w-sm">
-            <img :src="`/images/artworks/${latestRelease.id}.webp`" :alt="latestRelease.title"
-              class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+            <NuxtImg :src="`/images/artworks/${latestRelease.id}.webp`" :alt="latestRelease.title" format="avif"
+              sizes="sm:384px" width="600" height="600" placeholcer preload fetchpriority="high"
+              class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
             <h2 class="mt-2 text-lg font-semibold text-center text-black">{{ latestRelease.title }}</h2>
             <p class="text-sm text-center text-neutral-500">{{ formatDate(latestRelease.release_date) }}・{{
               formatReleaseType(latestRelease.type) }}</p>
@@ -52,7 +54,7 @@
             class="inline-block text-gray-600 border border-gray-400 py-2 px-6 rounded-full hover:bg-gray-100 transition">
             <div class="flex item-center">
               View More
-            <Icon name="formkit:arrowright" class="ml-2 relative translate-y-1"></Icon>
+              <Icon name="formkit:arrowright" class="ml-2 relative translate-y-1"></Icon>
             </div>
 
           </NuxtLink>

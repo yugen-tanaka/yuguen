@@ -3,7 +3,7 @@
         <h1 class="text-4xl font-bold mb-8 text-left text-black">Profile</h1>
         <div class="flex flex-col md:flex-row items-start gap-8">
             <div class="flex-shrink-0">
-                <img src="/images/yuguen.webp" alt="Yuguen" class="w-48 h-48">
+                <NuxtImg src="/images/yuguen.webp" alt="Yuguen" preload width="192" height="192" class="w-48 h-48" />
             </div>
             <div class="flex-grow">
                 <div>

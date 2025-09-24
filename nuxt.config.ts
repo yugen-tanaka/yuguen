@@ -1,11 +1,33 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
-  devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss', '@nuxt/icon'],
+  devtools: { enabled: process.env.NODE_ENV !== 'production' },
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxt/icon',
+    '@nuxt/image'
+  ],
+  icon: {
+    clientBundle: {
+      scan: true,
+    },
+  },
+  image: {
+    format: ['avif', 'webp'],
+    provider: 'vercel',
+    quality: 70,
+    screens: {
+      xs: 360, sm: 384, md: 640, lg: 768, xl: 1024, '2xl': 1280
+    },
+    domains: ['www.yuguen.net'],
+  },
   tailwindcss: {
     exposeConfig: true,
     viewer: true,
+  },
+  routeRules: {
+    '/': { isr: 300 },
+    '/discography/**': { isr: 300 },
   },
   app: {
     head: {
