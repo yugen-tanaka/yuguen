@@ -10,7 +10,7 @@
           width="600" 
           height="600"
           format="avif"
-          placeholder
+          :placeholder="50"
             class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow" />
 
           <h2 class="mt-2 text-lg font-semibold text-left text-black">{{ release.title }}</h2>

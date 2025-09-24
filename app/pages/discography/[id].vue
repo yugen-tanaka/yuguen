@@ -32,8 +32,8 @@
             <div class="flex items-center justify-center w-14 min-w-[56px]">
               <NuxtImg v-if="getPlatformInfo(platformLink.id, platforms)?.img"
                 :src="`/images/services/${getPlatformInfo(platformLink.id, platforms).img}`"
-                :alt="getPlatformInfo(platformLink.id, platforms)?.name"
-                placeholder
+                :alt="getPlatformInfo(platformLink.id, platforms)?.name"                
+                :placeholder="20"
                 class="w-8 h-8" />
             </div>
 
