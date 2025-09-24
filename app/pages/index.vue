@@ -17,10 +17,11 @@
             <NuxtImg 
             :src="`/images/artworks/${latestRelease.id}.webp`" 
             :alt="latestRelease.title"
-            placeholder="blur"
             format="avif"
             preload
             fetchpriority="high"
+            width="600"
+            height="600"
             class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow" />
             <h2 class="mt-2 text-lg font-semibold text-center text-black">{{ latestRelease.title }}</h2>
             <p class="text-sm text-center text-neutral-500">{{ formatDate(latestRelease.release_date) }}・{{
