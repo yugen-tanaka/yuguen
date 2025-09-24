@@ -1,16 +1,24 @@
 <template>
   <div v-if="release">
     <!-- 背景 -->
-    <div class="fixed inset-0 bg-cover bg-center blur-xl scale-110"
-      :style="{ backgroundImage: `url(/images/artworks/${release.id}.webp)` }"></div>
+    <NuxtImg
+      :src="`/images/artworks/${release.id}.webp`"
+      :alt="`${release.title} background`"
+      class="fixed inset-0 w-full h-full object-cover bg-center blur-xl scale-110 -z-10"
+      aria-hidden="true"
+      preload
+      fetchpriority="high"
+      format="avif"
+    />
     <div class="fixed inset-0 bg-black bg-opacity-50"></div>
 
     <!-- コンテンツ -->
     <div class="relative min-h-screen flex flex-col items-center justify-center p-4 text-white">
       <div class="w-full max-w-md text-center">
         <!-- アートワーク -->
-        <img :src="`/images/artworks/${release.id}.webp`" :alt="release.title"
-          class="w-64 h-64 mx-auto rounded-lg shadow-lg mb-4">
+        <NuxtImg :src="`/images/artworks/${release.id}.webp`" :alt="release.title"
+          width="256" height="256"
+          class="w-64 h-64 mx-auto rounded-lg shadow-lg mb-4" />
 
         <!-- タイトルとアーティスト -->
         <h1 class="text-4xl font-bold">{{ release.title }}</h1>
@@ -22,9 +30,11 @@
             class="flex items-center p-3 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105 bg-white bg-opacity-90 text-black font-bold text-lg">
 
             <div class="flex items-center justify-center w-14 min-w-[56px]">
-              <img v-if="getPlatformInfo(platformLink.id, platforms)?.img"
+              <NuxtImg v-if="getPlatformInfo(platformLink.id, platforms)?.img"
                 :src="`/images/services/${getPlatformInfo(platformLink.id, platforms).img}`"
-                :alt="getPlatformInfo(platformLink.id, platforms)?.name" class="w-8 h-8" />
+                :alt="getPlatformInfo(platformLink.id, platforms)?.name"
+                placeholder
+                class="w-8 h-8" />
             </div>
 
             <div class="flex-1 text-center">

@@ -2,7 +2,7 @@
   <div class="flex flex-col items-center p-4 bg-[rgb(0,154,183)]">
 
     <div class="flex items-center gap-4 pb-4">
-      <img src="/images/yuguen.webp" alt="Yuguen" class="w-12 h-12" />
+      <NuxtImg src="/images/yuguen.webp" alt="Yuguen" width="48" height="48" class="w-12 h-12" />
       <h1 class="text-4xl font-bold text-white">Yuguen</h1>
       <div class="flex items-center text-white">
         <Icon name="heroicons:map-pin-16-solid" class="mr-1" />
@@ -22,9 +22,9 @@
       <ul class="space-y-4">
         <li v-for="link in section.links" :key="link.id">
           <a :href="link.url" target="_blank"
-             class="flex items-center p-2 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105 bg-white bg-opacity-80">
+             class="flex items-center p-2 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105 bg-white bg-opacity-80 text-black">
             <div class="flex items-center justify-center w-14 min-w-[56px]">
-              <img v-if="link.img" :src="`/images/services/${link.img}`" alt="" class="w-[45px] h-[45px] rounded-lg" />
+              <NuxtImg v-if="link.img" :src="`/images/services/${link.img}`" alt="" width="45" height="45" class="w-[45px] h-[45px] rounded-lg" />
               <div v-else class="w-[45px] h-[45px]"></div>
             </div>
 

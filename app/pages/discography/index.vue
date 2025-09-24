@@ -4,7 +4,13 @@
     <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
       <div v-for="release in discography" :key="release.id" class="p-2">
         <NuxtLink :to="release.url || `/discography/${release.id}`" target="_blank" class="block">
-          <NuxtImg :src="`/images/artworks/${release.id}.webp`" :alt="release.title" width="600" height="600"
+          <NuxtImg 
+          :src="`/images/artworks/${release.id}.webp`" 
+          :alt="release.title" 
+          width="600" 
+          height="600"
+          format="avif"
+          placeholder
             class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow" />
 
           <h2 class="mt-2 text-lg font-semibold text-left text-black">{{ release.title }}</h2>
