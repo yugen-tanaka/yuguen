@@ -14,8 +14,14 @@
         <div class="text-center">
           <NuxtLink :to="latestRelease.url || `/discography/${latestRelease.id}`" target="_blank"
             class="inline-block max-w-sm">
-            <img :src="`/images/artworks/${latestRelease.id}.webp`" :alt="latestRelease.title"
-              class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+            <NuxtImg 
+            :src="`/images/artworks/${latestRelease.id}.webp`" 
+            :alt="latestRelease.title"
+            placeholder="blur"
+            format="avif"
+            preload
+            fetchpriority="high"
+            class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow" />
             <h2 class="mt-2 text-lg font-semibold text-center text-black">{{ latestRelease.title }}</h2>
             <p class="text-sm text-center text-neutral-500">{{ formatDate(latestRelease.release_date) }}・{{
               formatReleaseType(latestRelease.type) }}</p>
