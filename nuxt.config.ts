@@ -19,6 +19,16 @@ export default defineNuxtConfig({
     exposeConfig: true,
     viewer: true,
   },
+  nitro: {
+    // Vercelのエッジランタイムで動作するようにプリセットを変更します
+    preset: 'vercel-edge',
+  },
+  routeRules: {
+    // トップページを5分間 (300秒) キャッシュし、バックグラウンドで再生成します
+    '/': { isr: 300 },
+    // 個別の楽曲ページも同様にキャッシュします
+    '/discography/**': { isr: 300 },
+  },
   app: {
     head: {
       htmlAttrs: {
