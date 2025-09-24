@@ -5,9 +5,11 @@ export default defineNuxtConfig({
   modules: ['@nuxtjs/tailwindcss', '@nuxt/icon', '@nuxt/image'],
   image: {
     format: ['avif', 'webp'],
+    // VercelのImage Optimizationを利用するように設定します
+    provider: 'vercel',
     quality: 70,
     screens: {
-      xs: 360, sm: 640, md: 768, lg: 1024, xl: 1280
+      xs: 360, sm: 384, md: 640, lg: 768, xl: 1024, '2xl': 1280
     },
     domains: ['www.yuguen.net'],
   },
@@ -16,7 +18,8 @@ export default defineNuxtConfig({
     viewer: true,
   },
   nitro: {
-    preset: 'vercel',
+    // Edge Functionとしてデプロイするために 'vercel-edge' を指定します
+    preset: 'vercel-edge',
   },
   routeRules: {
     // トップページを5分間 (300秒) キャッシュし、バックグラウンドで再生成します

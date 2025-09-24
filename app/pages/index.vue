@@ -16,7 +16,7 @@
           <NuxtLink :to="latestRelease.url || `/discography/${latestRelease.id}`" target="_blank"
             class="inline-block max-w-sm">
             <NuxtImg :src="`/images/artworks/${latestRelease.id}.webp`" :alt="latestRelease.title" format="avif"
-              sizes="sm:384px" width="600" height="600" :placeholder="[300, 300, 50, 10]" preload fetchpriority="high"
+              sizes="sm:384px" width="600" height="600" placeholcer preload fetchpriority="high"
               class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" />
             <h2 class="mt-2 text-lg font-semibold text-center text-black">{{ latestRelease.title }}</h2>
             <p class="text-sm text-center text-neutral-500">{{ formatDate(latestRelease.release_date) }}・{{
