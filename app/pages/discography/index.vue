@@ -11,7 +11,9 @@
           height="600"
           format="avif"
           :placeholder="50"
-            class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow" />
+          class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow" 
+          loading="lazy"
+            />
 
           <h2 class="mt-2 text-lg font-semibold text-left text-black">{{ release.title }}</h2>
 
