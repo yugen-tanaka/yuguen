@@ -1,6 +1,15 @@
 {
     "newsData": [
         {
+            "id": "20251003-venezia-release",
+            "title": "Single「ヴェネツィア」配信リリース",
+            "description": "",
+            "url": "",
+            "img": "/images/artworks/venezia.webp",
+            "publishedAt": "2025-10-03",
+            "content": "ピアノ曲のシングル「ヴェネツィア」が2025.10.03に配信リリース。イタリア・ヴェネツィアの街並みや運河の揺れる水面、光のゆらめきをイメージしたピアノソロ楽曲となっている。<br>YouTubeのほか、SpotifyやApple Music、LINE MUSICなど、各種音楽配信サービスでもお聴きいただけます。<br><a href=\"https://linkco.re/9BSHymYS\" target=\"_blank\" class=\"text-blue-500 underline\">配信リンクはこちら</a>"
+        },
+        {
             "id": "20250917-venezia-preadd",
             "title": "「ヴェネツィア」Pre-add/Pre-Saveスタート",
             "description": "",
