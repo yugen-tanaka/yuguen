@@ -91,8 +91,11 @@ const sortedReleases = [...discographyData].sort((a, b) => {
 const latestRelease = sortedReleases[0];
 
 const isFuture = (dateString) => {
-  const date = new Date(dateString);
-  return date > Date.now();
+  const releaseDate = new Date(dateString);
+  releaseDate.setHours(0, 0, 0, 0); 
+  const today = new Date();
+  today.setHours(0, 0, 0, 0); 
+  return releaseDate.getTime() > today.getTime();
 };
 
 const socialLinks = linksData.find(section => section.title === 'Socials')?.links || [];
