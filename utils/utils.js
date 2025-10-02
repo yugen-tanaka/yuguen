@@ -38,3 +38,11 @@ export const formatReleaseCategory = (releaseCategory, lang = "ja") => {
   }
   return releaseCategoryText;
 };
+
+export const isFuture = (dateString) => {
+  const releaseDate = new Date(dateString);
+  releaseDate.setHours(0, 0, 0, 0); 
+  const today = new Date();
+  today.setHours(0, 0, 0, 0); 
+  return releaseDate.getTime() > today.getTime();
+};

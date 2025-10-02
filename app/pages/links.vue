@@ -47,7 +47,7 @@
 import { onMounted, ref } from 'vue';
 import sectionsData from '../data/links.json';
 import { platforms } from '../data/platforms.json';
-import { getPlatformInfo, formatReleaseType, formatReleaseCategory } from '../utils/utils.js';
+import { getPlatformInfo, formatReleaseType, formatReleaseCategory, isFuture } from '../utils/utils.js';
 import discography from '../data/discography.json';
 
 const userLang = ref('ja');
@@ -157,7 +157,7 @@ function generateReleaseText(lang = "ja") {
     const releaseTitle = lang === 'ja' ? `『${latest.title}』` : `"${latest.title_en}"`;
     const baseText = `${dateStr} ${descriptor}${releaseTitle}`;
 
-    const isReleased = releaseDate <= today;
+    const isReleased =  !isFuture(releaseDate);
 
     if (isReleased) {
         const linkPart = latest.url

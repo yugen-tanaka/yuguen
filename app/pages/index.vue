@@ -79,7 +79,7 @@ import discographyData from '../data/discography.json';
 import { platforms } from '../data/platforms.json';
 import { newsData } from '../data/news.json';
 import linksData from '../data/links.json';
-import { formatDate, formatReleaseType, getPlatformInfo } from '../utils/utils.js';
+import { formatDate, formatReleaseType, getPlatformInfo, isFuture } from '../utils/utils.js';
 
 const sortedNews = [...newsData].sort((a, b) => {
   return new Date(b.publishedAt) - new Date(a.publishedAt);
@@ -90,13 +90,7 @@ const sortedReleases = [...discographyData].sort((a, b) => {
 });
 const latestRelease = sortedReleases[0];
 
-const isFuture = (dateString) => {
-  const releaseDate = new Date(dateString);
-  releaseDate.setHours(0, 0, 0, 0); 
-  const today = new Date();
-  today.setHours(0, 0, 0, 0); 
-  return releaseDate.getTime() > today.getTime();
-};
+
 
 const socialLinks = linksData.find(section => section.title === 'Socials')?.links || [];
 </script>
