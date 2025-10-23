@@ -278,5 +278,16 @@
         "category": "piano",
         "description": "",
         "description_en": ""
+    },
+    {
+        "id": "chiteiryoko",
+        "title": "地底旅行",
+        "title_en": "Journey to the Center of the Earth",
+        "release_date": "2025-11-14",
+        "url": "https://linkco.re/HCQdCZ2v",
+        "type": "single",
+        "category": "vocal",
+        "description": "",
+        "description_en": ""
     }
 ]
