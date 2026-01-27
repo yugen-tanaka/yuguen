@@ -1,6 +1,15 @@
 {
     "newsData": [
         {
+            "id": "20260127-alpaca-900",
+            "title": "「Alpaca」Lyric Video 900回再生ありがとう",
+            "description": "",
+            "url": "",
+            "img": "/images/artworks/alpaca.webp",
+            "publishedAt": "2026-01-27",
+            "content": "2024.01.19にリリースされたシングル「Alpaca」のLyric Videoが、YouTubeにて900回再生を超えました。ご視聴ありがとうございます。<br><a href=\"https://ditto.fm/alpaca\" target=\"_blank\" class=\"text-blue-500 underline\">配信リンクはこちら<a/>"
+        },
+        {
             "id": "20251114-chiteiryoko-release",
             "title": "Single「地底旅行」配信リリース",
             "description": "",
@@ -105,33 +114,6 @@
             "url": "https://linkco.re/qvTAHH7H",
             "img": "",
             "publishedAt": "2025-03-07",
-            "content": ""
-        },
-        {
-            "id": "20250221-westwood",
-            "title": "ピアノ曲「Westwood」リリース",
-            "description": "",
-            "url": "https://ditto.fm/westwood-yuguen",
-            "img": "",
-            "publishedAt": "2025-02-21",
-            "content": ""
-        },
-        {
-            "id": "20250207-morning-glow",
-            "title": "ピアノ曲「朝の光に」リリース",
-            "description": "",
-            "url": "/discography/morning-glow",
-            "img": "",
-            "publishedAt": "2025-02-07",
-            "content": ""
-        },
-        {
-            "id": "20250117-yuguen-organ-open",
-            "title": "ゆうげんオルガンチャンネルがスタート",
-            "description": "",
-            "url": "https://www.youtube.com/channel/UCbxR7dg7VSlF4bh3oTUETKg?sub_confirmation=1",
-            "img": "",
-            "publishedAt": "2025-01-17",
             "content": ""
         }
     ]
