@@ -27,7 +27,7 @@
           <NuxtLink to="/discography"
             class="inline-block text-gray-600 border border-gray-400 py-2 px-6 rounded-full hover:bg-gray-100 transition">
             <div class="flex item-center">
-              View More
+              View All Releases
               <Icon name="formkit:arrowright" class="ml-2 relative translate-y-1"></Icon>
             </div>
           </NuxtLink>
@@ -53,7 +53,7 @@
           <NuxtLink to="/news"
             class="inline-block text-gray-600 border border-gray-400 py-2 px-6 rounded-full hover:bg-gray-100 transition">
             <div class="flex item-center">
-              View More
+              View All News
               <Icon name="formkit:arrowright" class="ml-2 relative translate-y-1"></Icon>
             </div>
 
