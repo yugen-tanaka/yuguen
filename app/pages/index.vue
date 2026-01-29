@@ -68,6 +68,9 @@
             class="text-gray-600 hover:text-gray-900 transition-colors">
             <Icon :name="`simple-icons:${link.id.toLowerCase()}`" class="w-8 h-8" />
           </a>
+          <NuxtLink to="/links" target="_blank" class="text-gray-600 hover:text-gray-900 transition-colors">
+            <Icon name="mdi:link-variant" class="w-8 h-8"/>
+          </NuxtLink>
         </div>
       </section>
     </div>

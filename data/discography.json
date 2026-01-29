@@ -67,20 +67,20 @@
         "title": "Karuizawa",
         "title_en": "Karuizawa",
         "release_date": "2022-10-30",
-        "url": "https://ditto.fm/karuizawa",
+        "url": "",
         "type": "album",
         "category": "piano",
-        "description": "",
+        "description": "配信継続の都合上、2つに分割されています。",
         "description_en": "",
         "sub_releases": [
             {
                 "title": "Karuizawa",
-                "url": "",
+                "url": "https://linkco.re/rXbyv5uC",
                 "note": "1〜15曲目を収録"
             },
             {
                 "title": "Karuizawa (Vol.2)",
-                "url": "",
+                "url": "https://linkco.re/VZU3TfBp",
                 "note": "16〜20曲目を収録"
             }
         ]
@@ -116,7 +116,7 @@
         "title": "Song of the Winds in G Major",
         "title_en": "Song of the Winds in G Major",
         "release_date": "2023-11-23",
-        "url": "https://ditto.fm/song-of-the-winds-in-g-major",
+        "url": "https://linkco.re/tFymhQcM",
         "type": "single",
         "category": "piano",
         "description": "",
@@ -160,7 +160,7 @@
         "title": "Green",
         "title_en": "Green",
         "release_date": "2024-03-29",
-        "url": "https://ditto.fm/green-yuguen",
+        "url": "https://linkco.re/0YUhh4F9",
         "type": "album",
         "category": "instrumental",
         "description": "",
@@ -171,7 +171,7 @@
         "title": "Circulation",
         "title_en": "Circulation",
         "release_date": "2024-05-10",
-        "url": "https://ditto.fm/circulation-yuguen",
+        "url": "https://linkco.re/gfQ5PPAt",
         "type": "single",
         "category": "piano",
         "description": "",
