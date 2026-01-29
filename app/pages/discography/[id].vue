@@ -47,7 +47,7 @@
         </div>
         <!-- 子リリース -->
         <div v-else-if="release.sub_releases" class="space-y-4">
-          <a v-for="release in release.sub_releases" :key="release.title" :href="release.ulr" target="_blank"
+          <a v-for="release in release.sub_releases" :key="release.title" :href="release.url" target="_blank"
             class="flex items-center p-3 rounded-lg shadow-md transition-transform duration-300 transform hover:scale-105 bg-white bg-opacity-77">
             <div class="flex-1 text-center">
               <p class="text-black font-bold text-xl">{{ release.title }}</p>
