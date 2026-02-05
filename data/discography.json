@@ -46,6 +46,32 @@
         "category": "piano",
         "description": "",
         "description_en": "",
+        "platformUrls": [
+            {
+                "id": "spotify",
+                "url": "https://open.spotify.com/intl-ja/track/77Ha2tkYrgMfOdXht4DmqS"
+            },
+            {
+                "id": "apple-music",
+                "url": "https://music.apple.com/jp/album/%E6%B0%B7%E9%9B%A8/1810142954?i=1810143062"
+            },
+            {
+                "id": "youtube-music",
+                "url": "https://music.youtube.com/watch?v=sThpEG9FPYU"
+            },
+            {
+                "id": "amazon-music",
+                "url": "https://music.amazon.co.jp/tracks/B0F6274SSH"
+            },
+            {
+                "id": "line-music",
+                "url": "https://lin.ee/CN8aOU3"
+            },
+            {
+                "id": "awa",
+                "url": "https://mf.awa.fm/4axzUPf"
+            }
+        ],
         "archive_info": {
             "alternate_release_id":"kazaguruma",
             "note":""
