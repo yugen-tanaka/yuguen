@@ -18,9 +18,9 @@
     </div>
 
     <section v-for="section in sections" :key="section.title" class="w-full max-w-md mb-6">
-      <h2 class="text-xl font-semibold mb-3 pb-2 text-center text-white">{{ section.title }}</h2>
+      <h2 class="text-xl font-semibold  pb-2 text-center text-white">{{ section.title }}</h2>
       <ul class="space-y-4">
-        <li v-for="link in section.links" :key="link.id">
+        <li v-for="link in (section.isOpen ? section.links : section.links.slice(0, 3))" :key="link.id">
           <a :href="link.url" target="_blank"
              class="flex items-center p-2 rounded-lg shadow-md transition-colors duration-300 transform hover:scale-105 bg-white bg-opacity-80 text-black">
             <div class="flex items-center justify-center w-14 min-w-[56px]">
@@ -39,6 +39,13 @@
           </a>
         </li>
       </ul>
+      <div v-if="section.links.length > 3" class="mt-4 flex justify-center">
+        <button @click="section.isOpen = !section.isOpen"
+                class="flex items-center gap-2 px-6 py-2 rounded-full bg-white bg-opacity-20 hover:bg-opacity-30 text-white font-semibold transition-all duration-300 backdrop-blur-sm">
+          <span>{{ userLang === 'ja' ? (section.isOpen ? '折りたたむ' : 'さらに表示') : (section.isOpen ? 'Show Less' : 'Show More') }}</span>
+          <Icon :name="section.isOpen ? 'heroicons:chevron-up-20-solid' : 'heroicons:chevron-down-20-solid'" class="w-5 h-5" />
+        </button>
+      </div>
     </section>
   </div>
 </template>
@@ -51,7 +58,7 @@ import { getPlatformInfo, formatReleaseType, formatReleaseCategory, isFuture } f
 import discography from '../data/discography.json';
 
 const userLang = ref('ja');
-const sections = sectionsData.map((section) => {
+const sections = ref(sectionsData.map((section) => {
     const updatedSection = { ...section };
     updatedSection.links = section.links.map((link) => {
         const platformInfo = getPlatformInfo(link.id, platforms);
@@ -60,8 +67,9 @@ const sections = sectionsData.map((section) => {
         }
         return { ...link, name_ja: platformInfo.name_ja, name_en: platformInfo.name_en, img: platformInfo.img };
     });
+    updatedSection.isOpen = false;
     return updatedSection;
-});
+}));
 
 // --- 日付処理系 ---
 function parseYMDToLocalDate(ymd) {
