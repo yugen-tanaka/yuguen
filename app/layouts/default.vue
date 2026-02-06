@@ -88,7 +88,7 @@ const menuItems = [
 
     <footer class="bg-white mt-8 py-4 border-t">
       <div class="container mx-auto px-4 flex justify-between items-center text-sm">
-        <p class="text-gray-500 text-center">&copy; 2025 Yuguen</p>
+        <p class="text-gray-500 text-center">&copy; 2026 Yuguen</p>
 
       </div>
     </footer>
