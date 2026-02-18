@@ -15,9 +15,10 @@
         <div class="text-center">
           <NuxtLink :to="latestRelease.url || `/discography/${latestRelease.id}`" target="_blank"
             class="inline-block max-w-sm">
-            <NuxtImg :src="`/images/artworks/${latestRelease.id}.webp`" :alt="latestRelease.title" format="avif" sizes="sm:384px"
-              width="600" height="600" placeholder
-              class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow aspect-square object-cover" loading="lazy" />
+            <NuxtImg :src="`/images/artworks/${latestRelease.id}.webp`" :alt="latestRelease.title" format="avif"
+              sizes="sm:384px" width="600" height="600" placeholder
+              class="w-full h-auto rounded-lg shadow-md hover:shadow-xl transition-shadow aspect-square object-cover"
+              loading="lazy" />
             <h2 class="mt-2 text-lg font-semibold text-center text-black">{{ latestRelease.title }}</h2>
             <p class="text-sm text-center text-neutral-500">{{ formatDate(latestRelease.release_date) }}・{{
               formatReleaseType(latestRelease.type) }}</p>
@@ -64,12 +65,17 @@
       <section class="text-center mb-12">
         <h2 class="text-3xl font-bold mb-6 text-center text-gray-800">Follow Me</h2>
         <div class="flex justify-center items-center gap-6">
+          <a v-for="link in dspLinks" :key="link.name" :href="link.url" target="_blank"
+            class="text-gray-600 hover:text-gray-900 transition-colors">
+            <Icon :name="`simple-icons:${link.id.toLowerCase()}`" class="w-8 h-8" />
+
+          </a>
           <a v-for="link in socialLinks" :key="link.name" :href="link.url" target="_blank"
             class="text-gray-600 hover:text-gray-900 transition-colors">
             <Icon :name="`simple-icons:${link.id.toLowerCase()}`" class="w-8 h-8" />
           </a>
           <NuxtLink to="/links" target="_blank" class="text-gray-600 hover:text-gray-900 transition-colors">
-            <Icon name="mdi:link-variant" class="w-8 h-8"/>
+            <Icon name="mdi:link-variant" class="w-8 h-8" />
           </NuxtLink>
         </div>
       </section>
@@ -96,4 +102,5 @@ const latestRelease = sortedReleases[0];
 
 
 const socialLinks = linksData.find(section => section.title === 'Socials')?.links || [];
+const dspLinks = linksData.find(section => section.title === 'Music')?.links.slice(0,2) || [];
 </script>
