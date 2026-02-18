@@ -7,7 +7,7 @@
         "url": "https://open.spotify.com/artist/32ayXtD1UKJ6Ue6lyvs7tV"
       },
       {
-        "id": "apple-music",
+        "id": "applemusic",
         "url": "https://music.apple.com/jp/artist/yuguen/1515931170"
       },
       {
@@ -47,14 +47,6 @@
       {
         "id": "tiktok",
         "url": "https://www.tiktok.com/@yuguen_music"
-      },
-      {
-        "id": "threads",
-        "url": "https://www.threads.net/@yuguen_music"
-      },
-      {
-        "id": "bluesky",
-        "url": "https://bsky.app/profile/yuguen.net"
       }
     ]
   },
