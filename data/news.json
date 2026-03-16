@@ -1,6 +1,24 @@
 {
     "newsData": [
         {
+            "id": "20260316-bangkok-presave",
+            "title": "ピアノSingle「バンコク」事前追加スタート 3/25リリース予定",
+            "description": "",
+            "url": "https://linkco.re/NE4M774x",
+            "img": "/images/artworks/bangkok.webp",
+            "publishedAt": "2026-03-25",
+            "content": "Yuguen (ゆうげん) の3ヶ月連続配信リリースプロジェクトがスタート。2026年2月〜4月、毎月配信リリースを行う。<br>第2回は、ピアノソロ・シングル『バンコク』を2026年3月25日に配信リリース予定。 ぜひ事前予約（Pre-add / Pre-save）してお待ちください。<br><a href=\"https://linkco.re/NE4M774x\" target=\"_blank\" class=\"text-blue-500 underline\">Pre-Add / Pre-Saveはこちら<a/>"
+        },
+        {
+            "id": "20260225-venezia-grand-piano-ver",
+            "title": "ピアノSingle「ヴェネツィア (Grand Piano Version)」配信リリース",
+            "description": "",
+            "url": "https://linkco.re/VNZYRhd0",
+            "img": "/images/artworks/venezia-grand.webp",
+            "publishedAt": "2026-02-25",
+            "content": "<a href=\"https://linkco.re/VNZYRhd0\" target=\"_blank\" class=\"text-blue-500 underline\">配信リンクはこちら<a/>"
+        },
+        {
             "id": "20260218-3month-release-prj",
             "title": "Yuguen3ヶ月連続配信リリースプロジェクト始動 第1弾: 『ヴェネツィア (Grand Piano Version)』",
             "description": "",
