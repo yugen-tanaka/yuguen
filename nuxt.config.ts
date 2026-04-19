@@ -1,3 +1,6 @@
+import discographyData from './data/discography.json';
+import newsJson from './data/news.json';
+
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
@@ -5,8 +8,19 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/icon',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxtjs/sitemap'
   ],
+  site: {
+    url: 'https://www.yuguen.net',
+  },
+  sitemap: {
+    urls: () => {
+      const discoRoutes = discographyData.map((item: any) => `/discography/${item.id}`);
+      const newsRoutes = newsJson.newsData.map((item: any) => `/news/${item.id}`);
+      return [...discoRoutes, ...newsRoutes];
+    }
+  },
   icon: {
     clientBundle: {
       scan: true,
