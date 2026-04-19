@@ -5,8 +5,12 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/icon',
-    '@nuxt/image'
+    '@nuxt/image',
+    '@nuxtjs/sitemap'
   ],
+  site: {
+    url: 'https://www.yuguen.net',
+  },
   icon: {
     clientBundle: {
       scan: true,
